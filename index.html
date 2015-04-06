@@ -1,10 +1,9 @@
-<%!
-	section = "index"
-%>
-<%inherit file="_templates/all-knowing-dns.mako" />
-
+---
+layout: default
+title: all-knowing-dns
+---
 <div class="row-fluid">
-<div class="span6">
+<div class="col-sm-6">
 
 <h3>Introduction</h3>
 
@@ -60,19 +59,19 @@ AllKnowingDNS manually, here you go:
 </p>
 
 <p>
-<a href="https://metacpan.org/release/AllKnowingDNS"><i class="icon-download"></i> latest AllKnowingDNS on metacpan.org</a>
+<a href="https://metacpan.org/release/AllKnowingDNS"><span class="glyphicon glyphicon-download" style="top: 2px" aria-hidden="true"></span> latest AllKnowingDNS on metacpan.org</a>
 </p>
 
 </div>
 
-<div class="span1">
+<div class="col-sm-1">
 &nbsp;
 </div>
 
-<div class="span5">
+<div class="col-sm-5">
 <h3>Installation Guide</h3>
 <p>
-Dou you have an IPv6 network with autoconf and want to provide reverse DNS for
+Do you have an IPv6 network with autoconf and want to provide reverse DNS for
 it? Got five minutes? We can do that! Let’s assume your network is <i>2001:4d88:100e:ccc0::/64</i>.
 </p>
 <h4>Install AllKnowingDNS</h4>
@@ -98,7 +97,7 @@ network 2001:4d88:100e:ccc0::/64
 $TTL 7d     ; 1 week
 e.0.0.1.8.8.d.4.1.0.0.2.ip6.arpa. IN SOA
     ns1.rzl.so. hostmaster.rzl.so. (
-        ; serial  refresh  retry  expire  minimum
+        ; serial  refresh  retry  expire  min
         42        7d       1d     30d     7d )
                     NS      ns1.rzl.so.
                     NS      ns2.rzl.so.
@@ -110,7 +109,7 @@ e.0.0.1.8.8.d.4.1.0.0.2.ip6.arpa. IN SOA
 <pre>
 $TTL    6h
 rzl.so. IN  SOA ns1.rzl.so. hostmaster.rzl.so. (
-        ; serial   refresh  retry  expire  minimum
+        ; serial   refresh  retry  expire  min
         2012030701 3h       30m    7d      1d )
         NS  ns1.rzl.so.
         NS  ns2.rzl.so.

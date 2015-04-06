@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>AllKnowingDNS — Tiny DNS server for IPv6 Reverse DNS</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		font-size: 13px;
+	}
+	pre {
+		font-size: 12px;
+	}
+	</style>
         <meta name="description" content="AllKnowingDNS provides reverse DNS for IPv6 networks which use SLAAC (autoconf), e.g. for a /64 network.">
         <meta name="keywords" content="DNS, IPv6, Reverse, autoconf, SLAAC">
         <meta name="author" content="Michael Stapelberg and contributors">
     </head>
     <body>
         <div class="container">
-            <header class="subhead" style="margin-top: 1em; margin-bottom: 1em">
-                <a href="/"><h1 id="title">AllKnowingDNS</h1><h2>Tiny DNS server for IPv6 Reverse DNS</h2></a>
+          <div class="row">
+            <header style="margin-top: 1em; margin-bottom: 1em">
+                <a href="/"><h1 id="title">AllKnowingDNS <small>Tiny DNS server for IPv6 Reverse DNS</small></h1></a>
             </header>
 
-            ${next.body()}
+            {{ content }}
 
             <footer class="footer" lang="de">
                 <p>
-                    © 2012 Michael Stapelberg, <a href="/impress.html">Impressum</a>
+                    © 2012-2015 Michael Stapelberg, <a href="/impress.html">Impressum</a>
                 </p>
             </footer>
+	  </div>
         </div>
     </body>
 </html>
