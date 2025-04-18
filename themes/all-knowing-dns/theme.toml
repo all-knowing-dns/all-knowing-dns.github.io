@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "all-knowing-dns"
+license = "BSD"
+licenselink = "https://github.com/i3/i3/blob/next/LICENSE"
+description = ""
+homepage = "https://all-knowing-dns.zekjur.net"
+tags = []
+features = []
+min_version = "0.37.1"
+
+[author]
+  name = ""
+  homepage = ""
